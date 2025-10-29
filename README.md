@@ -6,13 +6,14 @@ It includes two major components:
 - **Google ADK-based agent** for web-based project interaction and control.
 
 ---
-````markdown
+
 
 ## ⚙️ Steps to Run the Project Locally
 
 Follow the instructions below to set up and run both components of the project.
 
 ---
+````markdown
 # ⚡ Quick Start
 
 ## Clone the Repository
