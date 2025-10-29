@@ -6,6 +6,8 @@ venv/
 ENV/
 env/
 .venv/
+crew-venv/
+adk-venv/
 
 # =========================
 # 🔹 PYTHON BUILD FILES
