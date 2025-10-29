@@ -1,0 +1,12 @@
+# Google ADK Official Framework
+google-adk>=1.17.0
+
+# Configuration
+python-dotenv
+pyyaml
+
+# Data Validation
+pydantic
+
+# Additional Dependencies
+pathlib2
