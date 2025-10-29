@@ -17,7 +17,7 @@ Follow the instructions below to set up and run both components of the project.
 
 ## Clone the Repository
 ```bash
-- git clone https://github.com/<your-username>/Project-Manager_Agentic-AI.git
+- git clone https://github.com/chetannihith/Project-Manager_Agentic-AI.git
 - cd Project-Manager_Agentic-AI
 
 ### 🚀 1. Run the CrewAI Component
