@@ -1,0 +1,75 @@
+plan_task:
+  description: >
+    Generate a comprehensive roadmap for the project idea: {project_idea}
+    Break down the project into 5-7 clear milestones, each with:
+    - Milestone name and description
+    - Expected deliverables
+    - Recommended technologies and tools
+    - Estimated timeline
+    Present the output as a well-structured Markdown document.
+  expected_output: >
+    A detailed project roadmap in Markdown format with milestones, deliverables, technologies, and timelines
+  agent: planner_agent
+
+architect_task:
+  description: >
+    Using the roadmap from plan_task, design a comprehensive system architecture including:
+    - Module decomposition (list of main components/modules)
+    - Layer structure (UI, API, business logic, data layers)
+    - Recommended architecture pattern (Microservices, Clean Architecture, Layered, etc.)
+    - Technology stack recommendations
+    - Generate a Mermaid diagram code snippet to visualize the architecture
+  expected_output: >
+    Markdown document with architecture explanation and a code block containing Mermaid diagram
+  agent: architect_agent
+  context:
+    - plan_task
+
+resource_task:
+  description: >
+    For each milestone in the roadmap from plan_task, curate 2-3 high-quality learning resources including:
+    - Tutorial links with brief descriptions
+    - Documentation references
+    - Video resources (if applicable)
+    - Explain why each resource is relevant for that specific milestone
+  expected_output: >
+    Markdown list organized by milestones, each containing curated resources with descriptions and relevance explanations
+  agent: resource_curator_agent
+  context:
+    - plan_task
+
+explain_task:
+  description: >
+    Analyze the provided code snippet: {code_snippet}
+    Provide a comprehensive explanation including:
+    - What the code does (line by line or block by block)
+    - Potential issues or problems
+    - Suggestions for improvements
+    - Best practices that could be applied
+  expected_output: >
+    Markdown explanation with code analysis, issues identified, and improvement suggestions
+  agent: code_explainer_agent
+
+prompt_task:
+  description: >
+    Given the user's coding goal: {coding_goal}
+    Provide prompt engineering guidance including:
+    - Clear explanation of how to craft effective prompts for AI coding tools
+    - 2-3 refined prompt examples tailored for the specific goal
+    - Tips on how to iterate and refine prompts based on output quality
+    - Mention specific tools like Cursor, GitHub Copilot, or ChatGPT
+  expected_output: >
+    Markdown guidance with prompt examples and iteration tips
+  agent: prompt_coach_agent
+
+visualize_task:
+  description: >
+    Using the architecture details from architect_task, create additional visualizations:
+    - Generate a comprehensive Mermaid diagram showing the complete system flow
+    - Create a mind-map style diagram of the project structure
+    - Provide short explanations for each diagram
+  expected_output: >
+    Markdown containing multiple Mermaid diagram code blocks with explanations
+  agent: visualizer_agent
+  context:
+    - architect_task

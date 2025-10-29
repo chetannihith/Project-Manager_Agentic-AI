@@ -1,0 +1,7 @@
+crewai
+streamlit
+python-dotenv
+pyyaml
+litellm
+google-generativeai
+
