@@ -1,0 +1,136 @@
+# =========================
+# 🔹 VIRTUAL ENVIRONMENTS
+# =========================
+venv/
+.env/
+ENV/
+env/
+.venv/
+
+# =========================
+# 🔹 PYTHON BUILD FILES
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =========================
+# 🔹 LOGS & RUNTIME FILES
+# =========================
+logs/
+*.log
+*.tmp
+*.pid
+*.bak
+
+# =========================
+# 🔹 TESTS & COVERAGE
+# =========================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# =========================
+# 🔹 NOTEBOOKS
+# =========================
+.ipynb_checkpoints
+*.ipynb_convert/
+*.ipynb_*
+
+# =========================
+# 🔹 ENVIRONMENT / DOTFILES
+# =========================
+.env
+*.env
+python.env
+.secret
+secrets.json
+
+# =========================
+# 🔹 AI & LLM SPECIFIC FILES
+# =========================
+# Model caches and embeddings
+.cache/
+.cache_dir/
+hf_cache/
+transformers_cache/
+sentence_transformers/
+vectorstore/
+faiss_index/
+chroma_db/
+models/
+outputs/
+artifacts/
+checkpoints/
+experiments/
+wandb/
+mlruns/
+openai_cache/
+crewai_logs/
+adk_cache/
+agent_runs/
+
+# =========================
+# 🔹 APP / FRAMEWORK SPECIFIC
+# =========================
+# Streamlit
+.streamlit/
+
+# LangChain, LlamaIndex, CrewAI, ADK temp dirs
+.langchain/
+.llama_index_cache/
+.agent_memory/
+session_store/
+data/tmp/
+temp/
+
+# =========================
+# 🔹 IDE / OS FILES
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+*.rej
+
+# =========================
+#      Github
+# =========================
+.github/
+
+# =========================
+# 🔹 MISC
+# =========================
+# Compiled reports or generated media
+reports/
+screenshots/
+output/
+uploads/
